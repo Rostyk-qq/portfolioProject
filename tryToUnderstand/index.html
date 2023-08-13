@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  <link rel="stylesheet" href="./style.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Nunito:wght@500;600;700;800&display=swap" rel="stylesheet">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link href="https://d33wubrfki0l68.cloudfront.net/css/b14c4959d2141192dcad9a56bef700e9b47ebb62/css/style.css" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+  <title>Portfolio</title>
+</head>
+<body>
+    <header class="header">
+        <div class="header__name">
+            <p class="name" >Rostyslav Koval</p>
+        </div>
+        <div class="header__menu">
+            <ul class="menu__list" >  
+                <li class="list__item"><a href="#home" class="list__link" >Home</a></li>
+                <li class="list__item"><a href="#about" class="list__link" >About</a></li>            
+            </ul>
+        </div>
+        <li class="list__icon"><i id="icon" class="fa fa-bars" ></i></li>
+    </header>
+    <section id="home" class="section_title">
+        <main class="section__main">
+          <div class="main_title">
+            <h1>HEY, I'M ROSTYSLAV KOVAL</h1>
+          </div>
+          <div class="main_text">
+            <span>A PHP Fullstack Developer Building Dynamic Web Solutions from Back to Front, Empowering Websites and Web Applications for Optimal Performance</span>
+          </div>
+          <div class='main_btn'>
+            <a href="https://github.com/Rostyk-qq?tab=repositories">PROJECTS</a>
+          </main>
+        </div>
+    </section>
+    <section class="section__description">
+      <main class="section_about" id="about">
+          <div class="about__top">
+              <div class="top__title">
+                  <h1>ABOUT ME</h1>
+              </div>
+              <div class="top__description">
+                  Here you will find more information about me, what I do, and my current skills mostly in terms of programming and technology
+              </div>
+          </div>
+          <div class="content__main">
+              <div class="main__text">
+                  <h1>Get to know me!</h1>
+                  <div class="text-description">
+                    <p>
+                      My name is Rostyslav Koval, and I am a second-year university student. 
+                      Even at this stage of my education, I have discovered a deep interest in web development and programming. 
+                      Throughout the year, I have managed to gain valuable experience that has expanded my knowledge and skills.
+                    </p> 
+                    <p>
+                      My first step into the practical world of web development was during a part-time 
+                      job where I collaborated with my uncle. In this role, I was involved in designing pages for 
+                      various websites, working with templates, and considering both design and functionality. 
+                      This provided me with valuable experience in implementing ideas in practical projects.
+                    </p>
+                    <p>
+                      Simultaneously, I began diving deeper into learning PHP and SQL. 
+                      I find it fascinating to explore how powerful backend components can be created 
+                      for web applications and how to effectively interact with databases. 
+                      My practical experience and theoretical knowledge in these areas have 
+                      allowed me to implement functionality that meets user needs.
+                    </p>
+                    <p>
+                      On my educational journey, I have developed a strong interest in web technologies and development, 
+                      and I am ready to further enhance my knowledge and skills. My desire to improve and make a 
+                      contribution to this exciting field makes me a motivated and focused developer.
+                      I believe that my educational and practical experience lay the foundation for further 
+                      success in web development. I am always ready to embrace challenges, 
+                      learn, and grow alongside a team of professionals in this field.
+                    </p>
+                  </div>
+                    <div class="text-description-btn">
+                      <a href="#contacts" class="description-btn">CONTACT</a>
+                    </div> 
+              </div>
+
+              <div class="main__skills">
+                  <h1 class="skills__title">
+                      My Skills 
+                  </h1>
+                  <div class="slills__list">
+                     <span>HTML</span> 
+                     <span>CSS</span> 
+                     <span>SASS</span> 
+                     <span>JavaScript</span> 
+                     <span>TypeScript</span> 
+                     <span>React</span> 
+                     <span>Redux</span>
+                     <span>Next</span>
+                     <span>SEO</span> 
+                     <span>PHP</span> 
+                     <span>SQL Basics</span>  
+                  </div>
+              </div>
+          </div>
+      </div>
+  </section>
+  <footer id="contacts" class="section__footer">
+      <main class="footer__content">
+          <div class="content__description">
+           <div class="description__title">
+            <span>Rostyslav Koval</span>
+           </div>
+           <div class="content__text" >
+            A PHP Fullstack Developer Building Dynamic Web Solutions from Back to Front, Empowering Websites and Web Applications for Optimal Performance           </div>
+          </div>
+          <div class="content__contacts">
+              <span class="contact__title" >Contacts</span>
+              <span class="contact__phone" >+380680725464</span>
+          </div>
+      </main>
+      <div class="author">
+        <small>© Copyright 2023. Made by Rostyslav Koval</small>
+      </div>
+  </footer>
+    <!-- list under header -->
+    <div class="list_end">
+      <li class="list_end-item"><a href="#home">Home</a></li>
+      <li class="list_end-item"><a href="#about">About</a></li>
+    </div>
+
+    <script src="./script.js" defer></script>
+    <script>
+      function adjustSectionHeight() {
+        const sections = document.querySelectorAll('section');
+        sections.forEach(section => {
+          const content = section.querySelector('main');
+          const sectionHeight = content.getBoundingClientRect().height;
+          section.style.height = sectionHeight + 'px';
+        });
+      }
+  
+      window.addEventListener('load', adjustSectionHeight);
+      window.addEventListener('resize', adjustSectionHeight);
+    </script>
+</body>
+</html>
